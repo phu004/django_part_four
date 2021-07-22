@@ -15,10 +15,15 @@ workon dj && cd mysite
 <br/><br/>
 
 ## 2. Useing a template to display items of a ToDoList 
-Modify the view function "index" in views.py to render a template (call it "list.html"), The dictionary should only contain one key pair that represent the ToDoList object we are interested in. 
+Modify the view function "index" in "main/views.py" to render a template (call it "list.html"), The dictionary should only contain a single key pair which represents the ToDoList object we are interested in. 
 
+<details>
+  <summary>Click for solution</summary>
+  
+```sh
+def index(response, name):
+    ls = ToDoList.objects.get(name=name)
+    return render(response, "main/list.html", {"ls": ls})
+```
+</details>
 
-- Create a template for the webpage under the name "aboutme.html", it should extend the base template "base.html"
-- The body of the webpage should display the text "I like learning Django", the footer should display the text "Copyright 2021 FT3"
-
-Modify the view function "index" in views.py. 

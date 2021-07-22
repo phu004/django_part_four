@@ -14,7 +14,7 @@ workon dj && cd mysite
 ```
 <br/><br/>
 
-## 2. Useing a template to display items of a ToDoList 
+## 2. Using a template to display items of a ToDoList 
 Modify the view function "index" in "main/views.py" to render a template (call it "list.html"), The dictionary should only contain a single key pair which represents the ToDoList object we are interested in. 
 
 <details>
@@ -38,7 +38,7 @@ A template file - "list.html" has already been created in "main/templates/main/"
 ```
 </details>
 
-Then Modify the "content" block to list all the items in the ToDoList in a similar way to how "todolist" is listed in "home.html" . (hint: use "item_set.all" to get items from a ToDoList object)
+Then Modify the "content" block to list all the items in the ToDoList in a similar way to how "todolist" is listed in "home.html" . (Hint: use "item_set.all" to get items from a ToDoList object)
 
 <details>
   <summary>Click for solution</summary>
@@ -55,4 +55,8 @@ Then Modify the "content" block to list all the items in the ToDoList in a simil
 {% endblock %}
 ```
 </details>
+
+<br/><br/>
+
+## 2. Show the items of the list base on whether it is completed.
 

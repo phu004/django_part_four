@@ -39,4 +39,22 @@ A template file - "list.html" has already been created in "main/templates/main/"
 </details>
 
 Then Modify the "content" block to list all the items in the ToDoList in a similar manner as how "todolist" is listed in the "home.html" template. (hint: use "item_set.all" to get items from a ToDoList object)
+</details>
+
+A template file - "list.html" has already been created in "main/templates/main/", open it and modify the "title" block to show the name of the ToDoList
+<details>
+  <summary>Click for solution</summary>
+  
+```sh
+{% block content %}
+    <ul>
+        {% for item in ls.item_set.all %}
+            <li>
+                {{item.text}}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+```
+</details>
 

@@ -55,6 +55,9 @@ Then Modify the "content" block to list all the items in the ToDoList in a simil
 {% endblock %}
 ```
 </details>
+Start the server and go to the path "/main/First List", you should get something similar to the following:
+  
+![alt text](https://github.com/phu004/django_part_four/blob/main/workshop4a.png)
 
 <br/><br/>
 

@@ -65,7 +65,7 @@ Start the server and go to the path "/main/First List", you should get something
 The Item model has a boolean field called "complete". We can use "if" statement in the template to display this information along side with the items. The general structure of a "if" statement in Django templates looks like this:
 ```sh
 {% if some_condition == True %}
-    do something....
+    do something
 {% elif another_condition %}
     do something else
 {% else %}
@@ -73,6 +73,12 @@ The Item model has a boolean field called "complete". We can use "if" statement 
 {% endif %}
 
 ```
+Now modify the "content" block again to append the completeness status string after each item.
+
+Go to the path "/main/First List" again, you should get something similar to the following:
+  
+![alt text](https://github.com/phu004/django_part_four/blob/main/workshop4b.png)
+
 
 
 

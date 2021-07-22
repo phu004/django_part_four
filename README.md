@@ -66,7 +66,7 @@ The Item model has a boolean field called "complete". We can use "if" statement 
 ```sh
 {% if some_condition == True %}
     do something
-{% elif another_condition %}
+{% elif another_condition == True%}
     do something else
 {% else %}
     do rest of stuff
@@ -74,6 +74,27 @@ The Item model has a boolean field called "complete". We can use "if" statement 
 
 ```
 Now modify the "content" block again to append the completeness status string after each item.
+<details>
+  <summary>Click for solution</summary>
+  
+```sh
+{% block content %}
+    <ul>
+        {% for item in ls.item_set.all %}
+            {% if item.complete == True %}
+                <li>
+                    {{item.text}} -COMPLETE
+                </li>
+            {% else %}
+                <li>
+                    {{item.text}} -INCOMPLETE
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
+```
+</details>
 
 Go to the path "/main/First List" again, you should get something similar to the following:
   

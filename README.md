@@ -13,3 +13,11 @@ Once you are in, activate the python virtual environment and cd into the project
 workon dj && cd mysite
 ```
 <br/><br/>
+
+## 2. Create a template that shows all the items in a ToDoList 
+Objectives:
+- The webpage should be reached by using the path "/aboutme"
+- Create a template for the webpage under the name "aboutme.html", it should extend the base template "base.html"
+- The body of the webpage should display the text "I like learning Django", the footer should display the text "Copyright 2021 FT3"
+
+Modify the view function "index" in views.py. 

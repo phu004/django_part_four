@@ -38,7 +38,7 @@ A template file - "list.html" has already been created in "main/templates/main/"
 ```
 </details>
 
-Then Modify the "content" block to list all the items in the ToDoList in a similar manner as how "todolist" is listed in the "home.html" template. (hint: use "item_set.all" to get items from a ToDoList object)
+Then Modify the "content" block to list all the items in the ToDoList in a similar way to how "todolist" is listed in "home.html" . (hint: use "item_set.all" to get items from a ToDoList object)
 
 <details>
   <summary>Click for solution</summary>

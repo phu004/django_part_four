@@ -61,5 +61,18 @@ Start the server and go to the path "/main/First List", you should get something
 
 <br/><br/>
 
-## 2. Show the items of the list base on whether it is completed.
+## 3. Show the whether items in the ToDoList are completed or not
+The Item model has a boolean field called "complete". We can use "if" statement in the template to display this information along side with the items. The general structure of a "if" statement in Django templates looks like this:
+```sh
+{% if some_condition == True %}
+    do something....
+{% elif another_condition %}
+    do something else
+{% else %}
+    do rest of stuff
+{% endif %}
+
+```
+
+
 

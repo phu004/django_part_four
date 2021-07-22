@@ -27,3 +27,16 @@ def index(response, name):
 ```
 </details>
 
+A template file - "list.html" has already been created in "main/templates/main/", open it and modify the "title" block to show the name of the ToDoList
+<details>
+  <summary>Click for solution</summary>
+  
+```sh
+{% block title %}
+        {{ls.name}}
+{% endblock %}
+```
+</details>
+
+
+
